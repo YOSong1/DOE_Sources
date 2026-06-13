@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+analysis_log.jsonl
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.venv/
+venv/
+.git/
