@@ -2,6 +2,7 @@
 
 **대상 책**: Python으로 배우는 확률통계와 실험계획법 — 분석부터 LLM 활용까지
 **WikiDocs**: https://wikidocs.net/book/1914
+**Code Download**:https://github.com/YOSong1/DOE_Sources
 
 ## 폴더 구조
 
