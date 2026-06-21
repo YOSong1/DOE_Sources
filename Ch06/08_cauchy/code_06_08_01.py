@@ -10,6 +10,7 @@ except Exception:
     pass
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
 from scipy.stats import cauchy, norm
 
 plt.rc('font', family='Malgun Gothic')
@@ -33,6 +34,7 @@ axes[0].grid(True, alpha=0.3)
 
 axes[1].semilogy(x, cauchy_pdf, 'b-', linewidth=2, label='Cauchy(0, 1)')
 axes[1].semilogy(x, normal_pdf, 'r--', linewidth=2, label='Normal(0, 1)')
+axes[1].yaxis.set_major_formatter(ticker.LogFormatter(base=10))
 axes[1].set_title('Cauchy vs 정규 분포 PDF (로그 스케일)')
 axes[1].set_xlabel('x')
 axes[1].set_ylabel('확률 밀도 (log)')

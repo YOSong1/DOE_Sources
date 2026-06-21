@@ -12,6 +12,7 @@ except Exception:
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import weibull_min
+import matplotlib.ticker as ticker
 
 plt.rc('font', family='Malgun Gothic')
 plt.rc('axes', unicode_minus=False)
@@ -35,7 +36,7 @@ t_5pct = weibull_min.ppf(0.05, c=k, scale=lambda_)
 print(f"고장률 5% 이하 보증 기간: {t_5pct:.1f} 시간")
 
 # --- 4. k별 PDF 비교 (λ=1) ---
-x = np.linspace(0, 3, 500)
+x = np.linspace(0, 3, 500)   # x=0.0001 수정 후 진행
 k_values = [0.5, 1.0, 2.0, 5.0]
 colors = ['blue', 'green', 'orange', 'red']
 labels = ['k=0.5 (초기 고장↓)', 'k=1 (지수 분포)', 'k=2 (레일리 분포)', 'k=5 (마모 고장↑)']

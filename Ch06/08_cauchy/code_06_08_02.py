@@ -30,7 +30,7 @@ fig, axes = plt.subplots(1, 2, figsize=(13, 5))
 
 axes[0].plot(ns, cauchy_cum_mean, 'b-', linewidth=0.7, label='표본 평균 (수렴 안 함)', alpha=0.8)
 axes[0].plot(ns, cauchy_cum_median, 'g-', linewidth=1.5, label='표본 중앙값 (수렴)')
-axes[0].axhline(y=0, color='red', linestyle='--', linewidth=1.5, label='위치 모수 x₀=0')
+axes[0].axhline(y=0, color='red', linestyle='--', linewidth=1.5, label='위치 모수 $x_0=0$')
 axes[0].set_title('Cauchy 분포: 표본 평균 vs 표본 중앙값')
 axes[0].set_xlabel('표본 크기 n')
 axes[0].set_ylabel('누적 통계량 값')
